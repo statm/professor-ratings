@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    
+    "name": "USCSoCxRMP",
+    "description": "Show RateMyProfessors ratings in the USC Schedule of Classes page.",
+    "version": "0.1",
+    "author": "statm",
+    
+    "content_scripts": [
+        {
+            "matches": ["http://web-app.usc.edu/soc/*"],
+            "js": ["jquery-2.0.3.min.js", "data.js", "contentscript.js"],
+            "run_at": "document_idle"
+        }
+    ]
+}
