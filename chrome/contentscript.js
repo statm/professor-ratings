@@ -23,7 +23,7 @@ $("td.instructor").each(function() {
 
 function updateData() {
     $.ajax({
-        url: SERVER_URL + data.json",
+        url: SERVER_URL + "data.json",
         async: false,
         success: function(result) {
             localStorage["data"] = JSON.stringify(result);
