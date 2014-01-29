@@ -8,7 +8,11 @@
     "content_scripts": [
         {
             "matches": ["http://web-app.usc.edu/soc/*"],
-            "js": ["jquery-2.0.3.min.js", "data.js", "contentscript.js"]
+            "js": ["jquery-2.0.3.min.js", "contentscript.js"]
         }
+    ],
+    
+    "permissions": [
+        "http://statm.github.io/"
     ]
 }
